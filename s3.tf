@@ -15,9 +15,6 @@ terraform {
     bucket         = "tf-state-bucket-demo"  
     key            = "terraform.tfstate" 
     region         = "us-east-1"        
-
-    profile        = "my_default_profile_name"   
-
     encrypt        = true               
     dynamodb_table = "terraform-lock"   
 

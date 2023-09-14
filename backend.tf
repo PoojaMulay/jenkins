@@ -1,8 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "my-aws-tf-state-bucket"
-    key = "main"
+    bucket = "test-app-jenkins"
     region = "us-east-1"
-    dynamodb_table = "my-dynamo-db-table"
+    profile = "my_default_profile_name"
   }
 }

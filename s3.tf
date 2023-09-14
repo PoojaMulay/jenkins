@@ -1,10 +1,7 @@
-resource "aws_s3_bucket" "tf-state-bucket-demo" {
-  bucket_prefix = var.bucket_prefix
-  acl = var.acl
-  
-   versioning {
-    enabled = var.versioning
+  backend "s3" {
+    bucket = "tf-state-bucket-demo"
+    key    = "global/s3/terraform.tfstate"
+    region = "eu-central-1"
+    profile = "my_default_profile_name"
   }
-  
-  tags = var.tags
 }

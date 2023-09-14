@@ -8,7 +8,7 @@
     dynamodb_table = "cicd-demo-table"
     encrypt        = true
   }
-} */
+}
 
 terraform {
   backend "s3" {
@@ -20,3 +20,4 @@ terraform {
 
   }
 }
+*/

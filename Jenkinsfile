@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('checkout - git') {
             steps {
-                checkout scm
+                git branch: 'main', credentialsId: 'jenkins', url: 'https://github.com/PoojaMulay/jenkins/'
             }
         }
     

@@ -16,7 +16,7 @@ terraform {
     key            = "terraform.tfstate" 
     region         = "us-east-1"        
 
-    profile        = my_default_profile_name    
+    profile        = "my_default_profile_name"   
 
     encrypt        = true               
     dynamodb_table = "terraform-lock"   
